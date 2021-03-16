@@ -1,1 +1,1 @@
-def solution(point[])
+def solution(point)
