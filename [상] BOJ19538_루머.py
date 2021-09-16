@@ -1,6 +1,7 @@
 # BFS 큐, FIFO
 
 from collections import deque
+import sys
 
 
 def solution(N, adj, M, firstInfected):
@@ -25,12 +26,12 @@ def solution(N, adj, M, firstInfected):
     return answer[1:]
 
 
-N = int(input())
+N = int(sys.stdin.readline())
 adj = [0]
 for i in range(N):
-    adj.append(list(map(int, input().split())))
-M = int(input())
+    adj.append(list(map(int, sys.stdin.readline().split())))
+M = int(sys.stdin.readline())
 firstInfected = []
-firstInfected = list(map(int, input().split()))
+firstInfected = list(map(int, sys.stdin.readline().split()))
 for i in solution(N, adj, M, firstInfected):
     print(i, end=" ")
