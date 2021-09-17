@@ -1,5 +1,5 @@
 def solution(n, times):
-    answer = 9999999999999
+    answer = 999999999999
     times.sort()
     start = 1  # 최소 시간 변수
     end = n * times[len(times) - 1]  # 최대 심사 시간 * n명
